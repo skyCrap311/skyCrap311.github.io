@@ -1,0 +1,335 @@
+/* Rectangle 4 */
+div.center{
+    margin: auto;
+    margin-top: 10%;
+    width: 450px;
+    height: 450px;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+/* UE Logo */
+.logo{
+    display: block;
+    width: 78.08px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+
+/* Online Job Application */
+.title{
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 24px;
+
+    font-family: 'Inter';
+    text-align:center;
+    font-weight: 1000;
+    font-size: 24px;
+}
+
+/* University of the East - Caloocan */
+.school{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+
+    font-family: 'Inter';
+    text-align:center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+/* Login as Applicant or Register */
+.head3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10px;
+
+    font-family: 'Inter';
+    text-align:center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/* registration ID */
+.textbox{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7px;
+    padding: 10px;
+
+    font-family: 'Inter';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(88, 88, 88, 0.5);
+}
+
+.textbox:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.code{
+    width: 129px;
+    height: 40px;
+
+    font-family: 'Inter';
+    text-align: left;
+    font-size: 11px;
+    padding: 10px;
+    
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(88, 88, 88, 0.5);
+}
+.code:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+.sendcode{
+    display: block;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+
+    font-family: 'Inter';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.float-container {
+    display: block;
+    width: auto;
+    height: 40px;
+    margin-left: 22%;
+}
+
+.float-child {
+    width: 38%;
+    float: left;
+}  
+
+/* Sign in */
+
+.signin{
+    box-sizing: border-box;
+    
+    display: block;
+    margin-left: 0%;
+    margin-top: 10px;
+    width: 111px;
+    height: 30px;
+
+    font-family: 'Inter';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+    background: #E19494;
+    border: 1px solid #C56161;
+    border-radius: 25px;
+}
+
+.apply{
+    box-sizing: border-box;
+    
+    display: block;
+    margin-left: 0%;
+    margin-top: 5px;
+    padding: 4%;
+    width: 111px;
+    height: 30px;
+
+    font-family: 'Inter';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color:black;
+    text-decoration: none;
+
+    background: #DFDFDF;
+    border: 1px solid #8b8b8b;
+    border-radius: 25px;
+}
+
+.apply:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaledown {
+    0%{
+        -webkit-animation: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        -webkit-animation: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale {
+    0%{
+        -webkit-animation: scale(1.0);
+        transform: scale(1.0);
+    }
+    100%{
+        -webkit-animation: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.signin:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaledown {
+    0%{
+        -webkit-animation: scale(1.1);
+        transform: scale(1.1);
+    }
+    100%{
+        -webkit-animation: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes scale {
+    0%{
+        -webkit-animation: scale(1.0);
+        transform: scale(1.0);
+    }
+    100%{
+        -webkit-animation: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.rem{
+    box-sizing: border-box;
+
+    margin-left: 0%;
+    margin-top: 10%;
+    width: auto;
+    height: 30px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #676666;
+}
+
+.forgot{
+    display: block;
+    width: 140px;
+    height: 20px;
+
+    font-family: 'Inter';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+/* Remember me 
+
+position: absolute;
+width: 137px;
+height: 19px;
+left: 736px;
+top: 598px;
+
+
+
+/* Rectangle 8 
+
+box-sizing: border-box;
+
+position: absolute;
+width: 15px;
+height: 15px;
+left: 858px;
+top: 598px;
+
+background: #FFFFFF;
+border: 1px solid #676666;
+
+
+/* Remember me? 
+
+position: absolute;
+width: 118px;
+height: 19px;
+left: 736px;
+top: 598px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #676666;
+
+
+
+/* Forgot Password? 
+
+position: absolute;
+width: 136px;
+height: 19px;
+left: 736px;
+top: 616px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #676666;
+
