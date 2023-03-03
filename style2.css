@@ -72,8 +72,8 @@ input[type=submit]:hover {
     border-right:  5px double rgb(148, 29, 29); 
     width: 35%; 
     height: auto;
-    margin-top: 2%;
-    margin-left: 10%;
+    margin-top: 4%;
+    margin-left: 15%;
 
     font-family: 'Inter';
     text-align: left;
@@ -87,9 +87,9 @@ input[type=submit]:hover {
 .container2{
     overflow: hidden;
     float: left;
-    background-color: #FFFFFF;
+    background-color: #B80000;
     width: 40%; 
-    height: 600px;
+    height: 641px;
     margin-top: 4%;
 
     font-family: 'Inter';
