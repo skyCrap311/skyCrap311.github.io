@@ -17,7 +17,7 @@ div.center:hover{
 
 .wrapper{
     width: 100%;
-    padding: 200px;
+    padding: 200px 0px;
 }
 
 /* UE Logo */
@@ -246,7 +246,7 @@ div.center:hover{
 input[type=text]#modal, select {
     width: 80%;
     padding: 12px 16px;
-    margin: 0px 0px 2% 10%;
+    margin: 0px 0px 6px 10%;
     background-color: #FFFFFF;
     display: inline-block;
     border: 1px solid #ccc;
@@ -257,7 +257,7 @@ input[type=text]#modal, select {
 input[type=email], select {
     width: 80%;
     padding: 12px 16px;
-    margin: 0px 0px 2% 10%;
+    margin: 0px 0px 6px 10%;
     background-color: #FFFFFF;
     display: inline-block;
     border: 1px solid #ccc;
@@ -367,4 +367,32 @@ input:hover{
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+}
+
+@media only screen and (max-width: 465px) {
+    .wrapper{
+        width: 100%;
+        padding: 0px;
+    }
+
+    input[type=text]#modal, select {
+        width: 70%;
+        padding: 12px 16px;
+        margin: 0px 0px 6px 15%;
+    }
+    
+    input[type=email], select {
+        width: 70%;
+        padding: 12px 16px;
+        margin: 0px 0px 6px 15%;
+    }
+
+    .next{
+        width: 70%;
+        margin: 0px 0px 6px 15%;
+    }
+
+    .modal-content{
+        width: 600;
+    }
 }
