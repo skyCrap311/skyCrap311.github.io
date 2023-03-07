@@ -36,13 +36,78 @@
                 </div>
                 <div class="float-container">
                     <div class="float-child">
-                        <button type="submit" class="signin">Sign in</button>
-                        <a href="JobPosting.html" class="apply">Apply now!</a>
+                        <button type="submit"  class="signin">Sign in</button>
+                        <button type="submit" id="signin" class="apply">Register</a>
                     </div>
                     <div class="float-child">
                         <div class="rem"><label for="remember" class="rem">Remember me?</label><input type="checkbox" name="remember" id="remember"/></div>
                         <a href="" class="forgot">Forgot Password?</a>
                     </div>
+                </div>
+
+                
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p class="close">&times;</p>
+                    <img src="images/uelogo.png" class="logo">
+                    <h2 style="text-align: center;">University of the East<br><p style="font-size: 14px;">Caloocan Campus</p></h2>
+                    <input type="text" id="modal" name="firstname" placeholder="First name">
+                    <input type="text" id="modal" name="lastname" placeholder="Last name">
+                    <input type="text" id="modal" name="pass" placeholder="Password">
+                    <input type="text" id="modal" name="cpass" placeholder="Confirm Password">
+                    <!--<select id="country" name="country">
+                        <option value="australia">Select region</option>
+                        <option value="australia">NCR</option>
+                        <option value="canada">CAR</option>
+                        <option value="usa">Region I</option>
+                        <option value="usa">Region II</option>
+                        <option value="usa">Region III</option>
+                        <option value="usa">Region IV-A</option>
+                        <option value="usa">Mimaropa</option>
+                        <option value="usa">Region V</option>
+                        <option value="usa">Region VI</option>
+                        <option value="usa">Region VII</option>
+                        <option value="usa">Region VIII</option>
+                        <option value="usa">Region IX</option>
+                        <option value="usa">Region X</option>
+                        <option value="usa">Region XI</option>
+                        <option value="usa">Region XII</option>
+                        <option value="usa">Region XIII</option>
+                        <option value="usa">Region BARMM</option>
+                    </select> -->
+                    <input type="email" id="modal" name="email" placeholder="Email">
+                    <input type="text" id="modal" maxlength="11" placeholder="Contact number" step="2" ondrop="return false;" onpaste="return false;" onkeypress="return event.charCode>=48 && event.charCode<=57">
+                    <br><br>
+                    <button class="next" id="next">Register</button>
+                    
+                    <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("signin");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                    </script>
                 </div>
             </div>
         </div>

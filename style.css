@@ -1,7 +1,6 @@
 /* Rectangle 4 */
 div.center{
     margin: auto;
-    margin-top: 10%;
     width: 450px;
     height: 450px;
     padding: 10px;
@@ -10,10 +9,15 @@ div.center{
     box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.25);
 }
 
-.wrapper:hover{
+div.center:hover{
     z-index: 100;
     animation: scale 0.4s linear;
     animation-fill-mode: forwards;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 200px;
 }
 
 /* UE Logo */
@@ -21,12 +25,9 @@ div.center{
     display: block;
     width: 78.08px;
     height: 75px;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     margin-top: 10px;
 }
-
-
 
 /* Online Job Application */
 .title{
@@ -94,12 +95,6 @@ div.center{
     border: 1px solid rgba(88, 88, 88, 0.5);
 }
 
-.textbox:hover{
-    z-index: 100;
-    animation: scale 0.4s linear;
-    animation-fill-mode: forwards;
-}
-
 .code{
     width: 129px;
     height: 40px;
@@ -112,11 +107,7 @@ div.center{
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(88, 88, 88, 0.5);
 }
-.code:hover{
-    z-index: 100;
-    animation: scale 0.4s linear;
-    animation-fill-mode: forwards;
-}
+
 .sendcode{
     display: block;
     width: 140px;
@@ -223,28 +214,6 @@ div.center{
     animation-fill-mode: forwards;
 }
 
-@keyframes scaledown {
-    0%{
-        -webkit-animation: scale(1.1);
-        transform: scale(1.1);
-    }
-    100%{
-        -webkit-animation: scale(1.0);
-        transform: scale(1.0);
-    }
-}
-
-@keyframes scale {
-    0%{
-        -webkit-animation: scale(1.0);
-        transform: scale(1.0);
-    }
-    100%{
-        -webkit-animation: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-
 .rem{
     box-sizing: border-box;
 
@@ -273,63 +242,129 @@ div.center{
     font-size: 12px;
     text-decoration: none;
 }
-/* Remember me 
 
-position: absolute;
-width: 137px;
-height: 19px;
-left: 736px;
-top: 598px;
+input[type=text]#modal, select {
+    width: 80%;
+    padding: 12px 16px;
+    margin: 0px 0px 2% 10%;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+input[type=email], select {
+    width: 80%;
+    padding: 12px 16px;
+    margin: 0px 0px 2% 10%;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
+.next{
+    display: inline-block;
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 10%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 
-/* Rectangle 8 
+    font-family: 'Inter';
+    font-weight: 400px;
+    text-align: center;
+    font-size: 12px;
+}
 
-box-sizing: border-box;
+.next:hover {
+    background-color: #45a040;
+}
 
-position: absolute;
-width: 15px;
-height: 15px;
-left: 858px;
-top: 598px;
+.next:active{
+    background-color: #627264;
+}
 
-background: #FFFFFF;
-border: 1px solid #676666;
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding: 100px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+  
+  /* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+  
+  /* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+  
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 700px;
+    height: 650px;
 
-/* Remember me? 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 3%;
 
-position: absolute;
-width: 118px;
-height: 19px;
-left: 736px;
-top: 598px;
+    font-family: 'Inter';
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
 
-color: #676666;
+input:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
 
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    margin: 0 0 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 10px;
+    text-align: right;
+}
 
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-/* Forgot Password? 
-
-position: absolute;
-width: 136px;
-height: 19px;
-left: 736px;
-top: 616px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-color: #676666;
-
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
