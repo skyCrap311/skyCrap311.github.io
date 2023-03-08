@@ -14,14 +14,23 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="header">
-                <div class="float-child" style="margin-left: 23%;">
-                    <div style="float:left;">
-                        <a href="javascript:javascript:history.go(-1)" class="mainlink" style="text-decoration: none;">
-                            <img src="images/OFASlogo.png" height="78" style="float:left;"><p style="float:left;">&nbsp;&nbsp;&nbsp;&nbsp;</p><h1>Online Faculty<br>&nbsp;&nbsp;Admission</h1></a>
-                    </div>
+            <div class="bg-image">
+                <p class="welcome">Welcome to Online Faculty Admission</p>
+            </div>
+            <div class="header" id="myHeader">
+                <div style="width: 10%;float: left;">
+                    &nbsp;
+                </div>
+                <div style="float:left;width: 20%;">
+                    <a href="javascript:javascript:history.go(-1)" class="mainlink" style="text-decoration: none;">
+                        <img src="images/OFASlogo.png" height="78" style="float:left;"><p style="float:left;">&nbsp;&nbsp;&nbsp;&nbsp;</p><h1>Online Faculty<br>&nbsp;&nbsp;Admission</h1></a>
+                </div>
+                <div style="width: 30%;float: left;">
+                    &nbsp;
+                </div>
+                <div style="width: 25%;float: left;">
                     <div class="dropdown">
-                        <button class="dropbtn" style="margin-top:20px;">Basic Education</button>
+                        <button class="dropbtn">Basic Education</button>
                         <div class="dropdown-content">
                             <a href="https://www.ue.edu.ph/cal/academic-programs/" class="drop" target="_blank" rel="noopener noreferrer">Pre-School</a>
                             <a href="https://www.ue.edu.ph/cal/elementary/" class="drop" target="_blank" rel="noopener noreferrer">Elementary</a>
@@ -30,7 +39,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn" style="margin-top:20px;">College</button>
+                        <button class="dropbtn">College</button>
                         <div class="dropdown-content">
                             <a href="https://www.ue.edu.ph/cal/college-of-engineering-2/" class="drop" target="_blank" rel="noopener noreferrer">Engineering</a>
                             <a href="https://www.ue.edu.ph/cal/college-of-business-administration/" class="drop" target="_blank" rel="noopener noreferrer">Business Administration</a>
@@ -39,37 +48,100 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="https://www.ue.edu.ph/mla/welcome-note/" style="margin-top:20px; margin-left: 10px;position:relative;display: inline-block;font-family: 'Inter';font-style: normal;text-align: center; padding:10px; font-weight: 700;color: #FFFFFF;"  target=”_blank” rel="noopener noreferrer">About</a>
+                        <a href="https://www.ue.edu.ph/mla/welcome-note/" class="dropbtn" target=”_blank” rel="noopener noreferrer">About</a>
                     </div>
                     <div class="dropdown">
-                        <a href="https://www.ue.edu.ph/mla/email-directory/" style="margin-top:20px; margin-left: 10px;position:relative;display: inline-block;font-family: 'Inter';font-style: normal;text-align: center; padding:10px; font-weight: 700;color: #FFFFFF;"  target=”_blank” rel="noopener noreferrer">Contact</a>
+                        <a href="https://www.ue.edu.ph/mla/email-directory/" class="dropbtn" style="border:none;" target=”_blank” rel="noopener noreferrer">Contact</a>
                     </div>
                 </div>
+                <div style="width: 10%;float: left;margin-top: 10px;">
+                    <div onclick="toggleMenu()">
+                        <img src="images/sample.jpg" height="60px" style="border-radius: 40px;"><i class="arrow down"></i>
+                    </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="images/sample.jpg"> 
+                                <h2 style="color:#FFFFFF;font-family: 'Inter';">Kenneth Aedrianne Inao</h2>
+                            </div>
+
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/profile.png">
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/setting.png">
+                                <p>Settings & Privacy</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/help.png">
+                                <p>Help & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/logout.png">
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+                        </div>
+
+                        <script>
+                            let subMenu = document.getElementById("subMenu");
+
+                            function toggleMenu(){
+                                subMenu.classList.toggle("open-menu")
+                            }
+                        </script>
+                    </div>
+                </div>  
             </div>
-            <div class="bg-image">
-                <div class="container">
+            
+            <div class="body" id="body">
+                <div class="details-body">
+                    <div style="float:left; width: 65%;">
+                        <div class="container" style="height: 700px; width: 100%;">
+                            <p>Job Vacancy</p>
+                        </div>
+                        <div class="container" style="height: 700px; width: 100%;">
+                            <p>Basic Education</p>
+                        </div>
+                    </div>
                     
-                </div>
-                <div class="container2">
-                    <div class="slide-images">
-                        <div class="img-container">
-                            <img src="images/Image Slide 1.jpg" class="img-style">
+                    <div class="container2">
+                        <div class="border-img">
+                            <div class="slide-images">
+                                <div class="img-container">
+                                    <img src="images/Image Slide 1.jpg" class="img-style">
+                                </div>
+                                <div class="img-container">
+                                    <img src="images/Image Slide 2.jpg" class="img-style">
+                                </div>
+                                <div class="img-container">
+                                    <img src="images/Image Slide 3.png" class="img-style">
+                                </div>
+                            </div>
                         </div>
-                        <div class="img-container">
-                            <img src="images/Image Slide 2.jpg" class="img-style">
-                        </div>
-                        <div class="img-container">
-                            <img src="images/Image Slide 3.png" class="img-style">
-                        </div>
+                        <p>Originally a part of the then Office of Registration and Records Management, the UE Admissions Office was created in the early 1980s to take charge of the implementation of policies on admission and preliminaries to matriculation. The Admissions Office examines and processes the entrance credentials of freshmen applicants, transferees, degreeholders and cross-registrants and incoming Senior High School Grade 11 applicantsseeking admission to the University.
+
+                            The UE Admissions Office is headed by a Director at the Manila Campus and an Assistant Director at the Caloocan Campus.
+                            
+                            The first Director of the UE Admissions Office was Dr. Pocidio C.M. Quiambao, Jr., Who was appointed in 1983. The Directors who succeeded Dr. Quaimbao through the years were Romeo Q. Armada; Maximo S. Gomez; Erwin B. Bermillo; Marcelo E. Vergara, who is presently the University Registrar; Ruth S. Palanca.
+                            
+                            The first Assistant Director of the UE Admissions Office was Engr. Julius Mallillin in 1996.He was then succeeded by Bernadette A. Viduya in 2005.
+                        </p>
                     </div>
-                    <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3>
                 </div>
             </div>
+            
             <div class="footer">
                 <div class="footer-div">
-                    <div class="textwidget"><p><img class="alignnone size-medium wp-image-8633" src="https://www.ue.edu.ph/cal/wp-content/uploads/2020/08/footer_name_ue.png" alt="" width="246" height="38"><br>
+                    
+                </div>
+                <div class="footer-div">
+                    <div class="textwidget"><p><img src="https://www.ue.edu.ph/cal/wp-content/uploads/2020/08/footer_name_ue.png" alt="" width="246" height="38"><br>
                         <em>Tomorrow Begins in the East.</em>
                         <br>105 Samson Road, Caloocan City<br>
                         <span style="font-size: 15px; color: #ffffffa1;">Trunklines:<br>
@@ -84,10 +156,22 @@
                 <div class="footer-div">
                     
                 </div>
-                <div class="footer-div">
-                    
-                </div>
             </div>
+            <script>
+                window.onscroll = function(){
+                    myFunction();
+                }
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+            </script>
         </div>
 
     </body>
