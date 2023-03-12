@@ -189,7 +189,7 @@ thead, tbody{
     position: relative;
     height: 80px;
 
-    z-index: 1;
+    z-index: 3;
     background-image: url(images/footer.png);
 }
 
