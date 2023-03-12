@@ -349,7 +349,6 @@ input:hover{
     animation-fill-mode: forwards;
 }
 
-/* The Close Button */
 .close {
     color: #aaaaaa;
     margin: 0 0 0 auto;
@@ -377,6 +376,8 @@ input:hover{
     text-align: center;
     padding: 0 30px 30px;
     color: #333;
+
+    box-shadow: 1px 1px 1px rgb(158, 158, 158);
 
     font-family: 'Inter';
 

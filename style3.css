@@ -6,6 +6,39 @@
     box-sizing: border-box;
 }
 
+.jobposting{
+    width: 90%;
+    height: auto;
+    
+    border-collapse: collapse;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-head{
+    font-family: 'Inter';
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+}
+
+.table-row-head{
+    background-color: #B80000;
+    color:#FFFFFF;
+
+    height: 30px;
+}
+
+thead, tbody{
+    border: 2px solid #231F20;
+    border-style: line;
+}
+
+.data{
+    padding: 5px;
+}
+
 .sub-menu-wrap{
     position:absolute;
     right: 5%;
@@ -378,18 +411,6 @@ nav a.active,nav a:hover{
 nav:hover{
     width: 15%;
     transition: all 1s ease;
-}
-
-.container h2{
-    text-align: center; 
-    font-size: 70px;
-    padding: 10px;
-    color:#ffffff;
-    text-shadow: 2px 2px 3px #000000;
-
-    background-image: url(images/Image\ Slide\ 1.jpg);
-    background-repeat:repeat-y;
-    background-position: center;
 }
 
 @media only screen and (max-width: 765px) {
