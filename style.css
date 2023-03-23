@@ -19,16 +19,14 @@ div.center:hover{
     padding: 200px 0px;
 }
 
-/* UE Logo */
 .logo{
     display: block;
     width: 78.08px;
     height: 75px;
     margin:auto;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
-/* Online Job Application */
 .title{
     display: block;
     margin-top: 2%;
@@ -43,7 +41,6 @@ div.center:hover{
     font-size: 24px;
 }
 
-/* University of the East - Caloocan */
 .school{
     display: block;
     margin-left: auto;
@@ -57,9 +54,6 @@ div.center:hover{
     font-size: 15px;
 }
 
-
-
-/* Login as Applicant or Register */
 .head3{
     display: block;
     margin-left: auto;
@@ -74,7 +68,6 @@ div.center:hover{
     line-height: 15px;
 }
 
-/* registration ID */
 .textbox{
     display: block;
     width: 250px;
@@ -132,8 +125,6 @@ div.center:hover{
     width: 38%;
     float: left;
 }  
-
-/* Sign in */
 
 .signin{
     box-sizing: border-box;
@@ -214,8 +205,6 @@ div.center:hover{
 }
 
 .rem{
-    box-sizing: border-box;
-
     margin-left: 0%;
     margin-top: 10%;
     width: auto;
@@ -242,166 +231,12 @@ div.center:hover{
     text-decoration: none;
 }
 
-input[type=text]#modal, select {
-    width: 80%;
-    padding: 12px 16px;
-    margin: 0px 0px 6px 10%;
-    background-color: #FFFFFF;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=email], select {
-    width: 80%;
-    padding: 12px 16px;
-    margin: 0px 0px 6px 10%;
-    background-color: #FFFFFF;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.next{
-    display: inline-block;
-    width: 80%;
-    background-color: #4CAF50;
-    color: white;
-
+.teach, .nonteach{
+    width: auto;
     text-decoration: none;
-    padding: 14px 20px;
-    margin-left: 10%;
-
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
-    font-family: 'Inter';
-    font-weight: 400px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.next:hover {
-    background-color: #45a040;
-}
-
-.next:active{
-    background-color: #627264;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    padding: 100px;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-  
-  /* Modal Body */
-.modal-body {
-    padding: 2px 16px;
-}
-  
-  /* Modal Footer */
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-  
-  /* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #ffffff;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 700px;
-    height: 700px;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 3%;
-
-    font-family: 'Inter';
-
-    animation-name: animatetop;
-    animation-duration: 1s
-}
-
-input:hover{
-    z-index: 100;
-    animation: scale 0.4s linear;
-    animation-fill-mode: forwards;
-}
-
-.close {
-    color: #aaaaaa;
-    margin: 0 0 0 auto;
-    font-size: 28px;
-    font-weight: bold;
-    padding-right: 10px;
-    text-align: right;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.popup{
-    width: 400px;
-    background: #FFFFFF;
-    border-radius: 10px;
-    position:absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-
-    box-shadow: 1px 1px 1px rgb(158, 158, 158);
-
-    font-family: 'Inter';
-
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup img{
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
+    display: inline-block;
+    padding: 10px;
+    margin: 1px;
     background-color: #6fd649;
     color: #ffffff;
     border: 0;
@@ -411,35 +246,7 @@ input:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-@media only screen and (max-width: 465px) {
-    .wrapper{
-        width: 100%;
-        padding: 0px;
-    }
-
-    input[type=text]#modal, select {
-        width: 70%;
-        padding: 12px 16px;
-        margin: 0px 0px 6px 15%;
-    }
-    
-    input[type=email], select {
-        width: 70%;
-        padding: 12px 16px;
-        margin: 0px 0px 6px 15%;
-    }
-
-    .next{
-        width: 70%;
-        margin: 0px 0px 6px 15%;
-    }
-
-    .modal-content{
-        width: 600;
-    }
+.modal-content{
+    text-align: center;
+    width: 50%;
 }

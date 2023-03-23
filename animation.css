@@ -1,0 +1,76 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform:rotateX(-5deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media only screen and (max-width: 5000px){
+    nav:hover ~ .content-nav-bar{
+        transition: all 1s ease;
+        left: 15%;
+        width: 85%; 
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #extra{
+        display: none;
+    }
+    
+    .wrapper{
+        width: 1440px;
+        height: 865px;
+    }
+
+    nav:hover{
+        width: 300px;
+    }
+    
+    nav:hover ~ .content-nav-bar{
+        transition: all 1s ease;
+        left: 15%;
+        width: 85%; 
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    #extra{
+        display: none;
+    }
+    
+    .wrapper{
+        size: absolute;
+        width: 425px;
+        height: 100%;
+    }
+
+    nav:hover{
+        width: 300px;
+    }
+
+    .container h2{
+        font-size: 30px;
+    }
+
+    .container{
+        width: 94%;
+        margin: 0 3%;
+    }
+
+    .content-nav-bar{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+    }
+}

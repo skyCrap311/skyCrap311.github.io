@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>University of the East OJA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style10.css" rel="stylesheet" type="text/css"/>
+        <link href="responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="modal.css" rel="stylesheet" type="text/css"/>
+        <link href="table.css" rel="stylesheet" type="text/css"/>
+        <link href="popup.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-navicon"></i>
+                </label>
+                <label class="logo"><img src="images/uelogo.png">UNIVERSITY OF THE EAST</label>
+                <ul>
+                    <li><a class="active" href="#">Job Vacancy</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#" id="signin">Sign up</a></li>
+                </ul>
+            </nav>
+
+            <div class="divider">
+                <div style="float:left;margin: none;top: 80px;left: 0px;height: 5px;background-color: #B80000;width: 40%;"></div>
+                <div style="float:left;top: 80px;height: 5px;background-color: #b83a00;width: 30%;"></div>
+                <div style="float:left;top: 80px;height: 5px;background-color: #b87800;width: 30%;"></div>
+            </div>
+
+            <section>
+                <div class="container">
+                    <h1>Online Job Admission</h1>
+                </div>
+
+                <div class="depart">
+                    <h2>Department</h2>
+                    <ul>
+                        <li>EHSD</li>
+                        <li>CAS</li>
+                        <li>ENG</li>
+                        <li>BSA</li>
+                        <li>CBA</li>
+                    </ul>
+                </div>
+
+                <p style="width: 100%; text-align: center;"><a href="#">Login</a> or <a href="#">Register</a> to apply.</p><br><br>
+
+                <div class="data-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-sort onclick="sortTable(0, this)">Title/Position Summary</th>
+                                <th data-sort onclick="sortTable(1, this)">Rank</th>
+                                <th data-sort onclick="sortTable(2, this)">Department</th>
+                                <th data-sort onclick="sortTable(3, this)">Hiring Start</th>
+                                <th data-sort onclick="sortTable(4, this)">Deadline</th>
+                                <th>Apply</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>College of Computer Studies and Systems - Assistant Dean</td>
+                                <td>Assistant Dean</td>
+                                <td>CCSS</td>
+                                <td>2023-15-07</td>
+                                <td>2023-15-08</td>
+                                <td><a href="#">Apply</a></td>
+                            </tr>
+                            <tr>
+                                <td>College of Computer Studies and Systems - Assistant Teacher</td>
+                                <td>Assistant Teacher</td>
+                                <td>CCSS</td>
+                                <td>2023-15-07</td>
+                                <td>2023-15-08</td>
+                                <td><a href="#">Apply</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+            </section>
+        </div>
+        <script>
+
+            function sortTable(n, evt){
+                var table = document.querySelector('table'),
+                    thead = document.querySelector('thead'),
+                    tbody = table.querySelector('tbody'),
+                    bRows = [...tbody.rows],
+                    hData = [...thead.querySelectorAll('th')],
+                    desc = false;
+
+                hData.map( (head) => {
+                    if (head != evt){
+                        head.classList.remove('asc', 'desc');
+                    }
+                });
+
+                desc = evt.classList.contains('asc') ? true : false;
+                evt.classList[ desc ? 'remove' : 'add']('asc');
+                evt.classList[ desc ? 'add' : 'remove']('desc');
+
+                bRows.sort( (a, b) => {
+                    let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
+                        y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
+                    return -1;
+                });
+
+                bRows.map( (bRow) => {
+                    tbody.appendChild(bRow);
+                });
+            }
+
+        </script>
+
+        <div class="footer">
+            <div class="divider">
+                <div style="float:left;margin: none;height: 5px;background-color: #B80000;width: 40%;">&nbsp;</div>
+                <div style="float:left;top: 80px;left: 40%;height: 5px;background-color: #b83a00;width: 30%;"></div>
+                <div style="float:left;top: 80px;left: 70%;height: 5px;background-color: #b87800;width: 30%;"></div>
+            </div>
+        </div>
+    </body>
+</html>
