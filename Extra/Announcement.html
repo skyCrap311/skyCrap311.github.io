@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>UE Faculty Admission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/style2.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header" id="myHeader">
+                <div style="width: auto; display:inline-block; line-height: 80px;margin-left: 10%;">
+                    <a href="index-page2.html" style="text-decoration: none;">
+                        <img src="images/OJA (1).png" height="80" style="float:left;"><h1 class="h1-header">University of the East Online Job Admission</h1></a>
+                </div>
+                    <div onclick="toggleMenu()">
+                        <img src="images/sample.jpg" height="60px" style="border-radius: 40px;"><i class="arrow down"></i>
+                    </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="images/sample.jpg"> 
+                                <h2 style="color:#FFFFFF;font-family: 'Inter';">Kenneth Aedrianne Inao</h2>
+                            </div>
+
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/profile.png">
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/setting.png">
+                                <p>Settings & Privacy</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/help.png">
+                                <p>Help & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/logout.png">
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+                        </div>
+
+                        <script>
+                            let subMenu = document.getElementById("subMenu");
+
+                            function toggleMenu(){
+                                subMenu.classList.toggle("open-menu")
+                            }
+                        </script>
+                    </div>
+                </div>  
+            </div>
+            <div class="body" id="body">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="head-nav"><i class="fa-solid fa-bars"></i><span class="nav-item">Modules</span></a></li>
+                        <li><a href="#" class="active"><i class="fa-solid fa-folder"></i><span class="nav-item">Announcement</span></a></li>
+                        <li><a href="JobPosting.html"><i class="fa-solid fa-clipboard"></i><span class="nav-item">Job Vacancy</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i><span class="nav-item">View Hiring Process</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-folder-open"></i><span class="nav-item">Downloadable Forms</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-ticket"></i><span class="nav-item">Referral</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-users"></i><span class="nav-item">Personal Information</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-nav-bar">
+                    <div class="container">
+                        <div class="head-announcement">
+                            <h2>Announcement</h2>
+                        </div>
+                        <div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    <div class="textwidget"><p><img src="https://www.ue.edu.ph/cal/wp-content/uploads/2020/08/footer_name_ue.png" alt="" width="246" height="38"><br>
+                        <em>Tomorrow Begins in the East.</em>
+                        <br>105 Samson Road, Caloocan City<br>
+                        <span style="font-size: 15px; color: #ffffffa1;">Trunklines:<br>
+                        ✆ Caloocan Campus (632) 8367-45-72<br>
+                        ✆ UERMMMCI (632) 8715-08-61<br>
+                        </span></p>
+                    </div>
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

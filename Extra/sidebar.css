@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background: #B80000;
+    transition: all .5s ease;
+}
+
+.sidebar .header-sidebar{
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255,255,255, .1);
+    border-left: 5px solid transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .5s ease;
+}
+
+.body a.active,.body a:hover{
+    border-left: 5px solid #b93632;
+    color: #b93632;
+}
+
+.body .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+}
+
+.body .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.body #check{
+    display: none;
+}
+
+.body label #btn, .body label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    font-size: 15px;
+    background: #262626;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    line-height: 25px;
+    transition: all .5s ease;
+}
+
+.body label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body #check:checked ~ .sidebar{
+    left: 0;
+}
+
+.body #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.body #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+}

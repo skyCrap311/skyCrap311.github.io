@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>UE Faculty Admission</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/animation.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/style3.css" rel="stylesheet" type="text/css"/>
+        <link href="./css/table.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header" id="myHeader">
+                <div style="width: 10%;float: left;">
+                    &nbsp;
+                </div>
+                <div style="float:left;width: 20%;">
+                    <a href="index-page2.html" class="mainlink" style="text-decoration: none;">
+                        <img src="images/OJA (1).png" height="75" style="float:left;"><p style="float:left;">&nbsp;</p><h1>University of the East<br>Online Job Admission</h1></a>
+                </div>
+                <div style="width: 35%;float: left;">
+                    &nbsp;
+                </div>
+                <div style="width: 25%;float: left; position:static;" id="extra">
+                    <div class="dropdown">
+                        <button class="dropbtn">Basic Education</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.ue.edu.ph/cal/academic-programs/" class="drop" target="_blank" rel="noopener noreferrer">Pre-School</a>
+                            <a href="https://www.ue.edu.ph/cal/elementary/" class="drop" target="_blank" rel="noopener noreferrer">Elementary</a>
+                            <a href="https://www.ue.edu.ph/cal/junior-high/" class="drop" target="_blank" rel="noopener noreferrer">Junior High</a>
+                            <a href="https://www.ue.edu.ph/cal/senior-high-2/" class="drop" target="_blank" rel="noopener noreferrer">Senior High</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">College</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.ue.edu.ph/cal/college-of-engineering-2/" class="drop" target="_blank" rel="noopener noreferrer">Engineering</a>
+                            <a href="https://www.ue.edu.ph/cal/college-of-business-administration/" class="drop" target="_blank" rel="noopener noreferrer">Business Administration</a>
+                            <a href="https://www.ue.edu.ph/cal/college-of-arts-and-sciences-2/" class="drop" target="_blank" rel="noopener noreferrer">Art and Sciences</a>
+                            <a href="https://www.ue.edu.ph/cal/senior-high-2/" class="drop" target="_blank" rel="noopener noreferrer">Fine Arts, Architecture, and Design</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.ue.edu.ph/mla/welcome-note/" class="dropbtn" target=”_blank” rel="noopener noreferrer">About</a>
+                    </div>
+                </div>
+                <div style="width: 10%;float: right;margin-top: 10px;">
+                    <div onclick="toggleMenu()">
+                        <img src="images/sample.jpg" height="60px" style="border-radius: 40px;"><i class="arrow down"></i>
+                    </div>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <img src="images/sample.jpg"> 
+                                <h2 style="color:#FFFFFF;font-family: 'Inter';">Kenneth Aedrianne Inao</h2>
+                            </div>
+
+                            <hr>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/profile.png">
+                                <p>Edit Profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/setting.png">
+                                <p>Settings & Privacy</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/help.png">
+                                <p>Help & Support</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <img src="images/logout.png">
+                                <p>Logout</p>
+                                <span>></span>
+                            </a>
+                        </div>
+
+                        <script>
+                            let subMenu = document.getElementById("subMenu");
+
+                            function toggleMenu(){
+                                subMenu.classList.toggle("open-menu")
+                            }
+                        </script>
+                    </div>
+                </div>  
+            </div>
+            <div class="body" id="body">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="head-nav"><i class="fa-solid fa-bars"></i><span class="nav-item">Modules</span></a></li>
+                        <li><a href="Announcement.html"><i class="fa-solid fa-folder"></i><span class="nav-item">Announcement</span></a></li>
+                        <li><a href="#" class="active"><i class="fa-solid fa-clipboard"></i><span class="nav-item">Job Vacancy</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-eye"></i><span class="nav-item">View Hiring Process</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-folder-open"></i><span class="nav-item">Downloadable Forms</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-ticket"></i><span class="nav-item">Referral</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-users"></i><span class="nav-item">Personal Information</span></a></li>
+                    </ul>
+                </nav>
+                <div class="content-nav-bar">
+                    <div class="container">
+                        <h2 style="text-align: center; padding: 10px;">Job Vacancy</h2>
+                        <div class="data-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th data-sort onclick="sortTable(0, this)">Title/Position Summary</th>
+                                        <th data-sort onclick="sortTable(1, this)">Rank</th>
+                                        <th data-sort onclick="sortTable(2, this)">Department</th>
+                                        <th data-sort onclick="sortTable(3, this)">Hiring Start</th>
+                                        <th data-sort onclick="sortTable(4, this)">Deadline</th>
+                                        <th>Apply</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr name="table-row">
+                                        <td>College of Computer Studies and Systems - Assistant Dean</td>
+                                        <td>Assistant Dean</td>
+                                        <td>CCSS</td>
+                                        <td>2023-03-24</td>
+                                        <td>2023-04-24</td>
+                                        <td><a href="#">Apply</a></td>
+                                    </tr>
+                                    <tr name="table-row">
+                                        <td>College of Business Administration - Assistant Teacher</td>
+                                        <td>Assistant Teacher</td>
+                                        <td>CBA</td>
+                                        <td>2023-03-28</td>
+                                        <td>2023-04-28</td>
+                                        <td><a href="#">Apply</a></td>
+                                    </tr>
+                                    <tr name="table-row">
+                                        <td>College of Business Administration - Teacher</td>
+                                        <td>Teacher</td>
+                                        <td>CBA</td>
+                                        <td>2024-01-28</td>
+                                        <td>2024-02-28</td>
+                                        <td><a href="#">Apply</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    <div class="textwidget"><p><img src="https://www.ue.edu.ph/cal/wp-content/uploads/2020/08/footer_name_ue.png" alt="" width="246" height="38"><br>
+                        <em>Tomorrow Begins in the East.</em>
+                        <br>105 Samson Road, Caloocan City<br>
+                        <span style="font-size: 15px; color: #ffffffa1;">Trunklines:<br>
+                        ✆ Caloocan Campus (632) 8367-45-72<br>
+                        ✆ UERMMMCI (632) 8715-08-61<br>
+                        </span></p>
+                    </div>
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+                <div class="footer-div">
+                    
+                </div>
+            </div>
+        </div>
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+</html>

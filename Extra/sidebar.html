@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <style>
+            html, body{
+                width: 100%;
+                overflow-x:hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo"><span>Online Job Application Management</span></a>
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="main">
+                <div class="bx bx-menu" id="menu-icon">
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <i class="fa-solid fa-xmark" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-inbox"></i>
+                    <span>Announcement</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Job Posting</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span>Status</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Schedule</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Account</span>
+                </a>
+            </div>
+        </div>
+        
+        <script src="../script.js"></script>
+    </body>
+</html>
